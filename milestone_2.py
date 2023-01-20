@@ -11,4 +11,15 @@ print (word)
 guess = input ('Enter a single letter')
 print(guess)
 
+# Task 4
+# Checking that the user entered a valid input 
+# %%
+guess = input ('Enter a single letter')
+print(guess)
+if len(guess) == 1 : 
+    print ("Good guess!")
+elif guess.isalpha():
+    print ("Good guess!")
+else:
+    print ("Oops! That is not a valid input." )
 # %%
