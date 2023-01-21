@@ -3,14 +3,18 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
-
-Milestone 1
+Milestone 1 
+Setting up the environment
+---
+Milestone 2
 The preliminary game logic for the overall project was established here. The main objective was to introduce control flows such as if else to help check user's input. The file milestone_2.py was created which contained the code for this milestone and  it contained random list called word_list wherein random choice of words can be selected at intervals. 
 
 
-> Snapshot of Milestone 1
+> Snapshot of Milestone 2
 
 ![](images/Screenshot%202023-01-21%20at%2010.25.45.png)
+
+
 
 Milestone 2
 Does what you have built in this milestone connect to the previous one? If so explain how. What technologies are used? Why have you used them? Have you run any commands in the terminal? If so insert them using backticks (To get syntax highlighting for code snippets add the language after the first backticks).
