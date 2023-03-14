@@ -14,12 +14,16 @@ else:
     print ("Sorry, {} is not in the word. Try again.".format(guess))
 # %%
 #Task 3 create the function to run tests
+guess = input ('Enter a single letter')
 def check_guess (guess):
-    guess.lower()
-    guess = input ('Enter a single letter')
-    if guess in word:
+     word_list = ['Orange', 'Mango', 'Banana', 'Pear', 'Tangerine']
+     import random
+     random.choice (word_list)
+     word = random.choice (word_list)
+     guess = input ('Enter a single letter')
+     if guess in word:
         print ("Good guess! {} is in the word.".format(guess))
-    else:
+     else:
         print ("Sorry, {} is not in the word. Try again.".format(guess))
 
 def ask_for_input ():
@@ -29,6 +33,7 @@ def ask_for_input ():
             print ("Good guess!")
         break
     print ("Invalid letter. Please, enter a single alphabetical character.") 
+
 
  
 
