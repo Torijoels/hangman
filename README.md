@@ -27,17 +27,10 @@ Step 3. Create an else block that prints a message saying "Sorry, {guess} is not
 
 
 
+Milestone 3
+To adequately capture the code in milestone 2, I created and defined functions called 'check_guess' and 'ask_for_input'.
+These fucntions would check if the selected letter is in the word and the ask for input functions would iteratively check if the input is a valid guess.
 
-
-Milestone 2
-Does what you have built in this milestone connect to the previous one? If so explain how. What technologies are used? Why have you used them? Have you run any commands in the terminal? If so insert them using backticks (To get syntax highlighting for code snippets add the language after the first backticks).
-
-Example below:
-
-/bin/kafka-topics.sh --list --zookeeper 127.0.0.1:2181
-The above command is used to check whether the topic has been created successfully, once confirmed the API script is edited to send data to the created kafka topic. The docker container has an attached volume which allows editing of files to persist on the container. The result of this is below:
-"""Insert your code here"""
-Insert screenshot of what you have built working.
 
 Milestone n
 Continue this process for every milestone, making sure to display clear understanding of each task and the concepts behind them as well as understanding of the technologies used.
