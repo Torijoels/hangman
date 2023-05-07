@@ -32,12 +32,14 @@ To adequately capture the code in milestone 2, I created and defined functions c
 These fucntions would check if the selected letter is in the word and the ask for input functions would iteratively check if the input is a valid guess.
 
 
-Milestone n
-Continue this process for every milestone, making sure to display clear understanding of each task and the concepts behind them as well as understanding of the technologies used.
+Milestone 4
+This stage captures the project in a Class called 'Hangman'. The class was initiatlised with the word_list and num_lives arguments.
+The word_list depicts the entire words that can be guessed whilst the num_lives represents the number of times the player can repeat the game before reaching the end of the game.
 
-Also don't forget to include code snippets and screenshots of the system you are building, it gives proof as well as it being an easy way to evidence your experience!
+Two methods 'check_guess' and 'ask_for_input' will allow the player confirm their guesses and validate that the letter guessed are in the secret 'word'.
+
 
 Conclusions
 Maybe write a conclusion to the project, what you understood about it and also how you would improve it or take it further.
 
-Read through your documentation, do you understand everything you've written? Is everything clear and cohesive??
+Read through your documentation, do you understand everything you've written? Is everything clear and cohesive?? 
