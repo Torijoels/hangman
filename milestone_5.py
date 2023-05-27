@@ -54,5 +54,8 @@ def play_game (word_List):
         print (ask_input.ask_for_input())
      else:
         print ("Congratulations. You won the game!")
+    return 
 # %%
 play_game (word_list)
+
+# %%

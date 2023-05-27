@@ -1,45 +1,39 @@
 import random
-#%%
+
+
 class HangMan:
     def __init__(self, word_list, num_lives=5):
-
         self.word = random.choice (word_list)
-        self.word_guessed = ['', '', '', '', '']
-        self.num_letters = len(set())
+        self.word_guessed = [[] for i in range(10)]
+        self.num_letters = len(set(self.word_guessed))
         self.num_lives = num_lives
         self.word_list = word_list
-        self.list_of_guesses = []
-        def check_guess (guess):
-            guess = input('guess a letter: ')
-            guess.lower()
-            word_list = ['Orange', 'Mango', 'Banana', 'Pear', 'Tangerine']
-            random.choice (word_list)
-            word = random.choice (word_list)
-            if guess in word:
-                print ("Good guess! {} is in the word.".format(guess))
-                for letter in word:
-                   if letter in self.word_guessed:
-                       print(f"letter", end="")
-                   else:
-                       print (f"_", end="")
-                self.num_letters -= 1
-            else:
-                print ("Sorry, {letter} is not in the word. Try again.")
-                self.num_lives -= 1
-                print ("You have {num_lives} lives left.")
-
-        def ask_for_input ():
+        self.list_of_guesses = []  
+    def check_guess (guess):
+        guess = input('guess a letter: ')
+        guess_lower = guess.lower()
+        word_list = ['orange', 'mango', 'banana', 'pear', 'tangerine']
+        if guess in guess.word:
+           print (f"Good guess! {guess} is in the word.")
+        else:
+           print (f"Sorry, {guess} is not in the word. Try again.")
+        
+    def ask_for_input (self):
             while True:
               guess = input('guess a letter: ')
-              if len(guess) != 1 :
-                print ("Invalid letter. Please, enter a single alphabetical character.")  
+              if len(guess) != 1 and guess not in "abcdefghijklmnopqrstuvwxyz":
+                 print ("Invalid letter. Please, enter a single alphabetical character.")  
               elif guess in self.list_of_guesses :
                 print ("You already tried that letter!")
               else:
-                check_guess (guess)
-                guess = self.list_of_guesses
-        #%%
-        ask_for_input ()
+                calling_checkguess = HangMan ()
+                calling_checkguess.check_guess (guess)
+              self.list_of_guesses.append(guess)
+        
+#%%
+tmp = HangMan()
+print (tmp.ask_for_input())      
+      
 
 
 # %%
