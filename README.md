@@ -28,9 +28,13 @@ The word_list depicts the entire words that can be guessed whilst the num_lives 
 Two methods 'check_guess' and 'ask_for_input' will allow the player confirm their guesses and validate that the letter guessed are in the secret 'word'.
 
 
-Conclusions
-Maybe write a conclusion to the project, what you understood about it and also how you would improve it or take it further.
+Milestone 5
 
-Read through your documentation, do you understand everything you've written? Is everything clear and cohesive?? 
+This encompasses the logic for the Hangman game. A new funtion
+play_game was defined to set the prerequisite of how the player would play the game and throw in their guesses.
+
+
+Conclusions
+This project has in piece meals shown me how to group and build logic on the Hangman game. With each milestone, I have used relevant Python syntax and functions which has allowed me practice my learings. The object oriented programming as shown in MIlestone 4, depicts the true importance of creating a class and utilsing it within Python.
 
 
