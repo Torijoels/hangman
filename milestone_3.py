@@ -1,13 +1,6 @@
 import random
 
 
-#Task1 Continously run code until user inputs right letter
-
-
-#Task 2 check whether the guess is in the word
-
-
-#Task 3 create the function to run tests
 def check_guess (self):
     guess = input ('Enter a single letter')
     guess_lower = guess.lower()
@@ -24,7 +17,7 @@ def check_guess (self):
 def ask_for_input ():
     while True:
         guess = input('guess a letter: ')
-        if len(guess) == 1 and guess in '"abcdefghijklmnopqrstuvwxyz"':
+        if len(guess) == 1 and guess.isalpha():
              print ("Good guess!")
              break
         else:

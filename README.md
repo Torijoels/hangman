@@ -12,30 +12,19 @@ The preliminary game logic for the overall project was established here. The mai
 
 > Snapshot of Milestone 2
 
-![](images/Screenshot%202023-01-21%20at%2010.25.45.png)
-
-
-You should use an if statement to check if the letter entered by the user is in the word. Remember that the input should be stored in a variable called "guess" and the randomly picked word should be stored in a variable called "word". You can use the "in" operator to check if a character is in a string. If you think you have done it correctly, remember to use the right indentation for the if statement and just a single space between the "if" keyword and the condition
-
-Check whether the letter guessed by the user is in the secret word that was randomly chosen by the computer. For example, if the user guesses the letter "a" and the secret word is "apple", then your code should check if "a" is in "apple".
-
-Step 1. Create an if statement that checks if the guess is in the word.
-
-Step 2. In the body of the if statement, print a message saying "Good guess! {guess} is in the word.". Obviously, format the string to show the actual guess instead of {guess}.
-
-Step 3. Create an else block that prints a message saying "Sorry, {guess} is not in the word. Try again." This block of code will run if the guess is not in the word.
-
+![](images/milestone2im.png)
 
 
 Milestone 3
-To adequately capture the code in milestone 2, I created and defined functions called 'check_guess' and 'ask_for_input'.
-These fucntions would check if the selected letter is in the word and the ask for input functions would iteratively check if the input is a valid guess.
+This section uses iterations with the While loop to check accurately if the input the user sends is a valid input. Also, If statements are used to contruct the flow in such a way to check if the letter guessed is in the word. These two important aspects of the code are captured in two functions namely: ask_for_input and check_guess respectively
+
+> Snapshot of Milestone 3
+![](images/milestone3im.png)
 
 
 Milestone 4
-This stage captures the project in a Class called 'Hangman'. The class was initiatlised with the word_list and num_lives arguments.
-The word_list depicts the entire words that can be guessed whilst the num_lives represents the number of times the player can repeat the game before reaching the end of the game.
-
+Utilising object oriented programming, a class HangMan was created.
+The word_list depicts the entire words that can be guessed whilst the num_lives represents the number of times the player can repeat the game before reaching the end of the game. 
 Two methods 'check_guess' and 'ask_for_input' will allow the player confirm their guesses and validate that the letter guessed are in the secret 'word'.
 
 
